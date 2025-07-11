@@ -1,0 +1,19 @@
+print_month_name <- function(month_no){
+  month_name <- switch(month_no,
+                "january",
+                "february",
+                "march",
+                "april",
+                "may",
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november",
+                "december",
+                "invalid month number")
+  cat("the month corresponding to number",month_no,"is",month_name)
+}
+month_no <-as.numeric(readline("enter the month number(1-12)"))
+print_month_name(month_no)
