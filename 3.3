@@ -1,0 +1,11 @@
+find_factors <- function(num){
+  factors <- c()
+  for(i in 1:num){
+    if(num %% i == 0){
+      factors <- c(factors,i)
+    }
+  }
+  print(factors)
+}
+num <- as.numeric(readline("enter the number"))
+find_factors(num)
