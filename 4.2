@@ -1,0 +1,17 @@
+calc_area <- function(length,width){
+  area <- length*width
+  return(area)}
+
+calc_per <- function(length,width){
+  perimeter <- 2*(length+width)
+  return(perimeter)
+}
+main <- function(){
+  length <- as.numeric(readline("enter lenth"))
+  width <- as.numeric(readline("enter width"))
+  area <- calc_area(length,width)
+  perimeter <- calc_per(length,width)
+  cat("area of the rectangle",area,"\n")
+  cat("perimeter of the rectangle",perimeter,"\n")
+}
+main()
