@@ -10,22 +10,22 @@ ncr <- function(n, r) {
   if (r == 0 || r == n) {
     return(1)
   } else {
-
     return(factorial(n) / (factorial(r) * factorial(n - r)))
   }
 }
 
 main <- function() {
-  n <- as.numeric(readline("Enter the value of n: "))
-  r <- as.numeric(readline("Enter the value of r: "))
+  n <- as.numeric(readline("Enter the value of n : "))
+  r <- as.numeric(readline("Enter the value of r : "))
   
+
   if (n %% 1 != 0 || r %% 1 != 0 || n < 0 || r < 0) {
-    print("n and r must be non-negative integers")
+    cat("Error: n and r must be non-negative integers.\n")
     return()
   }
   
   if (n < r) {
-    print("n must be greater than or equal to r")
+    cat("Error: n must be greater than or equal to r.\n")
     return()
   }
   
@@ -33,7 +33,7 @@ main <- function() {
   fact_r <- factorial(r)
   fact_nr <- factorial(n - r)
   
-  result <- factorial(n) / (factorial(r) * factorial(n - r))
+  result <- ncr(n, r)
   
   cat("Factorial of", n, "is", fact_n, "\n")
   cat("Factorial of", r, "is", fact_r, "\n")
