@@ -1,0 +1,14 @@
+# Subject codes (e.g., 1 to 5 representing 5 subjects)
+subjects <- c(1, 2, 3, 4, 5)
+
+# Marks of two students
+student1_marks <- c(70, 80, 85, 90, 95)  # Student 1
+student2_marks <- c(60, 75, 80, 85, 90)  # Student 2
+
+# Plotting the line graph
+plot(subjects, student1_marks, type = "o", col = "blue",
+     xlab = "Subjects", ylab = "Marks", ylim = c(0, 100),
+     main = "Marks of Two Students")
+
+# Add second student's marks to the same graph
+lines(subjects, student2_marks, type = "o", col = "red")
