@@ -1,0 +1,37 @@
+# Create dataframe
+data <- data.frame(
+  Name = c("Amiya", "Raj", "Asish"),
+  Language = c("R", "Python", "Java"),
+  Age = c(22, 25, 45)
+)
+
+# Display the original dataframe
+cat("Original Dataframe:\n")
+print(data)
+
+# Add a new row
+new_row <- data.frame(
+  Name = "John",
+  Language = "C++",
+  Age = 30
+)
+
+data <- rbind(data, new_row)
+
+# Display the dataframe after adding a new row
+cat("\nDataframe after adding a new row:\n")
+print(data)
+
+# Remove the third row
+data <- data[-3, ]
+
+# Display the dataframe after removing a row
+cat("\nDataframe after removing a row:\n")
+print(data)
+
+# Summary of the dataframe
+summary_data <- summary(data)
+
+# Display summary of the dataframe
+cat("\nSummary of the dataframe:\n")
+print(summary_data)
