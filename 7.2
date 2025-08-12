@@ -1,1 +1,12 @@
 
+data <- data.frame(
+  state=c("alabama","alaska","arizona","arkansas","california","colorado","connecticut","delaware"),
+  population=c(4779736,710231,6392017,2915918,37253956,5029196,3574097,897934),
+  murder=c(5.7,5.6,4.7,5.6,4.4,2.8,2.4,5.8))
+
+mean_pop=mean(data$population)
+median_pop=median(data$population)
+variance_pop=var(data$population)
+print(paste("mean:",mean_pop))
+print(paste("median:",median_pop))
+print(paste("variance::",variance_pop))
