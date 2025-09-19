@@ -5,3 +5,9 @@ quality measurements in New York, May to September 1973."- R documentation. Crea
 
 
 •	 Create a strip chart for the Ozone reading of the “airquality” dataset.
+
+
+•	Find the statistical summary of Temp in the “airquality” dataset in R.
+•	 Given two data sets as vectors .Find the correlation coefficient ( spearman)
+
+•	Plot the normal distribution and cumulative distribution curve with given mean and standard deviation.
