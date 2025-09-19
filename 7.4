@@ -1,1 +1,8 @@
 
+data("airquality")
+stripchart(airquality$Ozone,
+           main = "Strip Chart of Ozone Readings",
+           xlab = "Ozone (ppb)",
+           method = "jitter",   # Add small random noise to avoid overlapping
+           col = "blue",
+           pch = 19)   
