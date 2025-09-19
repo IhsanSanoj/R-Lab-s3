@@ -1,1 +1,6 @@
 
+data ("airquality")
+airquality$Month <- factor(airquality$Month,labels=c("may","june","July","august","september"))
+boxplot(Ozone ~ Month,data=airquality,main="ozone levels by month(1973)",
+        xlab="month",ylab="ozone(ppb)",
+        col="lightblue",border="darkblue",na.action=na.omit)
